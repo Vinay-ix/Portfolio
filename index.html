@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Vinay - Embedded Systems & Firmware Engineer Portfolio. Final-year ECE student at VIT Chennai with experience in embedded firmware, IoT systems, FPGA design, and real-time communication protocols." />
+    <title>Vinay | Embedded Systems & Firmware Engineer</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome Icons for modern visuals -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Header with Glassmorphic Navigation -->
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="mypic.jpg" alt="Vinay" class="logo-avatar" onerror="this.src='https://via.placeholder.com/150/06b6d4/ffffff?text=V'" />
+          <div class="logo-text">Vinay<span>.dev</span></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li class="active" data-page="home"><a href="#home">Home</a></li>
+          <li data-page="about"><a href="#about">About</a></li>
+          <li data-page="skills"><a href="#skills">Skills</a></li>
+          <li data-page="projects"><a href="#projects">Projects</a></li>
+          <li data-page="contact"><a href="#contact">Contact</a></li>
+          <li><a href="resume.pdf" class="nav-resume-btn" download><i class="fa-solid fa-download"></i> Resume</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Page View -->
+      <section id="home" class="page-view active">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-status-tag">
+              <span class="hero-status-dot"></span>
+              <span>Seeking Embedded Software & Firmware Roles</span>
+            </div>
+            <h1 class="hero-title">
+              Hi, I am <span class="name">Vinay</span><br />
+              I develop <span class="role" id="element"></span>
+            </h1>
+            <p class="hero-desc">
+              Final-year ECE student at VIT Chennai with experience in embedded firmware, IoT systems, FPGA design, and real-time communication protocols.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" onclick="navigateTo('projects')">
+                <i class="fa-solid fa-microchip"></i> View Projects
+              </a>
+              <a href="resume.pdf" class="btn btn-resume" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Resume
+              </a>
+              <a href="#contact" class="btn btn-secondary" onclick="navigateTo('contact')">
+                <i class="fa-solid fa-envelope"></i> Let's Connect
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="image_1.png" alt="Hardware Engineering Illustration" class="pcb-board-illustration" onerror="this.src='https://images.unsplash.com/photo-1517055720413-77a28e007d3b?w=600&auto=format&fit=crop&q=80'" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Page View -->
+      <section id="about" class="page-view">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-info">
+            <p>
+              I am a final-year Electronics and Communication Engineering student at VIT Chennai (GPA 9.14) with a strong foundation in embedded firmware, IoT systems, FPGA design, and real-time communication protocols.
+            </p>
+            <p>
+              My expertise spans microcontroller firmware design, real-time operating systems (FreeRTOS), digital logic design (SystemVerilog), and hardware debugging. I love solving complex engineering problems and bridging the gap between hardware architecture and high-performance software.
+            </p>
+            <div style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
+              <a href="resume.pdf" class="btn btn-resume" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Download Full Resume (PDF)
+              </a>
+            </div>
+            <div class="about-timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Oct 2024 - Jan 2025</div>
+                <div class="timeline-title">Mafkin Robotics Pvt. Ltd. (ECE Intern)</div>
+                <div class="timeline-desc">Debugged and integrated embedded subsystems (microcontroller firmware, sensors, and communication interfaces) for robotics platforms. Cut issue-resolution time by ~25% and reduced integration-test failures by ~20%.</div>
+              </div>
+              <div class="timeline-item pcb">
+                <div class="timeline-date">2022 - 2026</div>
+                <div class="timeline-title">Vellore Institute of Technology (VIT Chennai)</div>
+                <div class="timeline-desc">B.Tech in Electronics and Communication Engineering. GPA: 9.14 / 10. Focusing on embedded systems, RTOS, and digital circuit design.</div>
+              </div>
+            </div>
+          </div>
+          <!-- Terminal Simulator -->
+          <div class="console-container">
+            <div class="console-header">
+              <div class="console-dots">
+                <span class="console-dot red"></span>
+                <span class="console-dot yellow"></span>
+                <span class="console-dot green"></span>
+              </div>
+              <span class="console-title">vinay@embedded-firmware:~$ UART0_Console</span>
+            </div>
+            <div class="console-body" id="console-body">
+              <div class="console-line">Vinay Embedded Shell v1.1.0 init success.</div>
+              <div class="console-line">MCU: ESP32 & FPGA RTL cores | Active: UART0 & MQTT</div>
+              <div class="console-line">Type <span style="color: var(--accent-cyan); font-weight: bold;">'help'</span> to see active options.</div>
+              <div class="console-line"></div>
+              <div class="console-input-row">
+                <span class="console-prompt">&gt;</span>
+                <input type="text" class="console-input" id="console-input" autofocus autocomplete="off" spellcheck="false" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications and Achievements -->
+        <div class="about-extra-grid">
+          <div class="extra-card-content">
+            <h3 class="extra-card-title cyan"><i class="fa-solid fa-award"></i> Certifications</h3>
+            <div class="timeline-item">
+              <div class="timeline-date">Jun - Jul 2024</div>
+              <div class="timeline-title">Digital Design Training – Maven Silicon</div>
+              <div class="timeline-desc">MSUID: MS/V-DI/2024-25/583. Covered Verilog, RV32I RISC-V processor fundamentals, UVM verification basics, and AHB interface design with hands-on lab exercises.</div>
+            </div>
+          </div>
+          <div class="extra-card-content">
+            <h3 class="extra-card-title amber"><i class="fa-solid fa-trophy"></i> Achievements & Leadership</h3>
+            <ul class="achievements-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Qualified <strong>GATE (ECE)</strong> examination.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Solved <strong>300+ Data Structures & Algorithms</strong> problems on LeetCode.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Coordinated a finance awareness session as a member of <strong>Dream Merchants Club</strong>, managing event logistics and audience engagement.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Tools Page View -->
+      <section id="skills" class="page-view">
+        <h2 class="section-title amber">Skills & Tools</h2>
+        <div class="skills-categories">
+          <!-- Programming & Systems -->
+          <div class="skill-card">
+            <div class="skill-card-title">
+              <i class="fa-solid fa-code"></i>
+              Programming & Systems
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">C / C++ & Embedded C</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">Python (Scripting & Automation)</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">Data Structures & Algorithms</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">FreeRTOS & Interrupt Handling</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Platforms & Hardware -->
+          <div class="skill-card">
+            <div class="skill-card-title">
+              <i class="fa-solid fa-microchip"></i>
+              Platforms & Hardware
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">ESP32 & Wireless SoCs</span><span class="skill-percentage">88%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">Arduino Uno & AVR Core</span><span class="skill-percentage">95%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">Jetson Nano SBC</span><span class="skill-percentage">78%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 78%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">Sensor & Module Integration</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 90%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Communication Protocols -->
+          <div class="skill-card pcb-skill">
+            <div class="skill-card-title">
+              <i class="fa-solid fa-network-wired"></i>
+              Communication Protocols
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">UART, SPI, I²C</span><span class="skill-percentage">92%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">CAN Bus</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">MQTT (IoT Messaging)</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">DMA, PWM, ADC/DAC</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Design & Tools -->
+          <div class="skill-card pcb-skill">
+            <div class="skill-card-title">
+              <i class="fa-solid fa-bezier-curve"></i>
+              Digital Design & Tools
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">SystemVerilog & RTL Design</span><span class="skill-percentage">82%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 82%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">FPGA Design & Quartus Prime</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">ModelSim RTL Simulation</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span class="skill-name">Oscilloscope & Logic Analyzer</span><span class="skill-percentage">88%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width: 88%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Page View -->
+      <section id="projects" class="page-view">
+        <div class="projects-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-tabs">
+            <button class="tab-btn active" id="tab-embedded" onclick="filterProjects('embedded')">Embedded & IoT</button>
+            <button class="tab-btn pcb-tab" id="tab-pcb" onclick="filterProjects('pcb')">FPGA & RTL Design</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- AI Power Touch-Free Alert System -->
+          <div class="project-card embedded-proj" data-category="embedded">
+            <div class="project-media-wrapper">
+              <span class="project-badge">Embedded & IoT</span>
+              <div class="project-media-slides" id="slide-emb1">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80" alt="ESP32 IoT Node Board" />
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&auto=format&fit=crop&q=80" alt="Jetson Nano Setup" />
+              </div>
+              <div class="project-carousel-controls">
+                <button class="carousel-arrow" onclick="shiftCarousel('emb1', -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-arrow" onclick="shiftCarousel('emb1', 1)"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+              <div class="project-indicators">
+                <span class="indicator-dot active" onclick="setCarouselSlide('emb1', 0)"></span>
+                <span class="indicator-dot" onclick="setCarouselSlide('emb1', 1)"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI Power Touch-Free Alert System</h3>
+              <p class="project-desc">
+                Integrated ESP32-based sensor nodes with MQTT communication and OpenCV-based blink detection on Jetson Nano to deliver real-time patient alerts. Designed low-latency (&lt;2s) MQTT communication from ESP32 nodes to a centralized dashboard, with Telegram Bot API integration for automated emergency alerts.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Jetson Nano</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Telegram Bot API</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Vinay-ix" target="_blank" class="project-link">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Real-Time Avionics Primary Flight Display -->
+          <div class="project-card embedded-proj" data-category="embedded">
+            <div class="project-media-wrapper">
+              <span class="project-badge">Embedded Systems</span>
+              <div class="project-media-slides" id="slide-emb2">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=80" alt="Avionics Visualization Display" />
+                <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9aae9d?w=600&auto=format&fit=crop&q=80" alt="Telemetry Data Analysis" />
+              </div>
+              <div class="project-carousel-controls">
+                <button class="carousel-arrow" onclick="shiftCarousel('emb2', -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-arrow" onclick="shiftCarousel('emb2', 1)"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+              <div class="project-indicators">
+                <span class="indicator-dot active" onclick="setCarouselSlide('emb2', 0)"></span>
+                <span class="indicator-dot" onclick="setCarouselSlide('emb2', 1)"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Real-Time Avionics Primary Flight Display</h3>
+              <p class="project-desc">
+                Built a real-time data acquisition and visualization pipeline for sensor-based flight parameters with noise-filtering algorithms. Implemented UART-based serial data transmission and resolved latency/data-consistency issues to optimize end-to-end performance.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">UART</span>
+                <span class="tech-tag">Data Processing</span>
+                <span class="tech-tag">Sensor Filtering</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Vinay-ix" target="_blank" class="project-link">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Real-Time Lossless JPEG-LS Compression on FPGA -->
+          <div class="project-card pcb" data-category="pcb" style="display: none;">
+            <div class="project-media-wrapper">
+              <span class="project-badge">FPGA & RTL Design</span>
+              <div class="project-media-slides" id="slide-pcb1">
+                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80" alt="FPGA Board Layout" />
+                <img src="image_2.png" alt="ModelSim Simulations" onerror="this.src='https://via.placeholder.com/600x340/151824/f59e0b?text=FPGA+JPEG-LS'" />
+              </div>
+              <div class="project-carousel-controls">
+                <button class="carousel-arrow" onclick="shiftCarousel('pcb1', -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-arrow" onclick="shiftCarousel('pcb1', 1)"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+              <div class="project-indicators">
+                <span class="indicator-dot active" onclick="setCarouselSlide('pcb1', 0)"></span>
+                <span class="indicator-dot" onclick="setCarouselSlide('pcb1', 1)"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Real-Time Lossless JPEG-LS FPGA Compression</h3>
+              <p class="project-desc">
+                Implemented and validated a high-throughput FPGA image compression pipeline, fixing timing violations and clock-domain-crossing issues to reach stable 103 MHz operation (4x throughput gain), verified via ModelSim.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">SystemVerilog</span>
+                <span class="tech-tag">Intel Quartus Prime</span>
+                <span class="tech-tag">ModelSim</span>
+                <span class="tech-tag">RTL Design</span>
+                <span class="tech-tag">FPGA Design</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Vinay-ix" target="_blank" class="project-link">
+                <i class="fa-brands fa-github"></i> View Design & RTL
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Page View -->
+      <section id="contact" class="page-view">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p style="color: var(--text-secondary);">
+              I'm open to full-time opportunities, ECE/firmware roles, and exciting collaborative projects. Drop a message, and let's build something amazing!
+            </p>
+            
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-method-title">Email</div>
+                <a href="mailto:Vinaysharma17005@gmail.com" class="contact-method-value">Vinaysharma17005@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-method pcb">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-method-title">LinkedIn</div>
+                <a href="https://linkedin.com/in/vinay-sharma-643422310" target="_blank" class="contact-method-value">linkedin.com/in/vinay-sharma-643422310</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <div class="contact-method-title">GitHub</div>
+                <a href="https://github.com/Vinay-ix" target="_blank" class="contact-method-value">github.com/Vinay-ix</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with system outputs -->
+          <form class="contact-form" id="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="form-name" class="form-label">System.Sender.Name:</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">System.Sender.Email:</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-msg" class="form-label">System.Payload.Message:</label>
+              <textarea id="form-msg" class="form-textarea" placeholder="Describe project parameters, MCU hardware targets, or career openings..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
+              <i class="fa-solid fa-paper-plane"></i> Transmit Packet
+            </button>
+            <div id="form-status" style="font-family: var(--font-mono); font-size: 0.85rem; margin-top: 0.5rem; display: none;"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-copy">&copy; 2026 Vinay | Embedded Systems & Firmware Engineer</div>
+        <ul class="footer-links">
+          <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+          <li><a href="#about" onclick="navigateTo('about')">About</a></li>
+          <li><a href="#skills" onclick="navigateTo('skills')">Skills</a></li>
+          <li><a href="#projects" onclick="navigateTo('projects')">Projects</a></li>
+          <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Video Modal Lightbox Overlay -->
+    <div class="lightbox-modal" id="video-lightbox" onclick="closeVideo()">
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <button class="lightbox-close" onclick="closeVideo()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-video-container">
+          <iframe id="lightbox-iframe" src="" allowfullscreen allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typed JS Library for Hero Section Typing -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- JavaScript Application Controller -->
+    <script>
+      // Hero Typing Text
+      var typed = new Typed("#element", {
+        strings: [
+          "Embedded & Microcontroller Firmware.",
+          "FPGA & Digital RTL Designs.",
+          "Real-Time Operating Systems (FreeRTOS).",
+          "Low-Latency IoT Systems."
+        ],
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true
+      });
+
+      // Hamburger mobile navigation toggle
+      const navToggle = document.getElementById('nav-toggle');
+      const navLinksList = document.getElementById('nav-links');
+      
+      navToggle.addEventListener('click', () => {
+        navLinksList.classList.toggle('active');
+        const icon = navToggle.querySelector('i');
+        if(navLinksList.classList.contains('active')) {
+          icon.className = 'fa-solid fa-xmark';
+        } else {
+          icon.className = 'fa-solid fa-bars';
+        }
+      });
+
+      // SPA Navigation Route Controller
+      function navigateTo(pageId) {
+        // Toggle mobile menu active state off on click
+        navLinksList.classList.remove('active');
+        navToggle.querySelector('i').className = 'fa-solid fa-bars';
+
+        // Select pages
+        const pages = document.querySelectorAll('.page-view');
+        pages.forEach(p => p.classList.remove('active'));
+        
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+          targetPage.classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Update header navbar states
+        const navItems = document.querySelectorAll('.nav-links li');
+        navItems.forEach(item => {
+          if (item.getAttribute('data-page') === pageId) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+
+      // Read Hash URL parameters on load to trigger route
+      function checkHashRoute() {
+        const hash = window.location.hash.substring(1);
+        const validPages = ['home', 'about', 'skills', 'projects', 'contact'];
+        if (validPages.includes(hash)) {
+          navigateTo(hash);
+        } else {
+          navigateTo('home');
+        }
+      }
+      
+      window.addEventListener('hashchange', checkHashRoute);
+      window.addEventListener('load', checkHashRoute);
+
+      // Projects Tab Filter controller
+      function filterProjects(category) {
+        // Update buttons state
+        const tabEmb = document.getElementById('tab-embedded');
+        const tabPcb = document.getElementById('tab-pcb');
+        
+        if (category === 'embedded') {
+          tabEmb.classList.add('active');
+          tabPcb.classList.remove('active');
+        } else {
+          tabEmb.classList.remove('active');
+          tabPcb.classList.add('active');
+        }
+
+        // Show/Hide project card grids
+        const cards = document.querySelectorAll('.project-card');
+        cards.forEach(card => {
+          if (card.getAttribute('data-category') === category) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // Card Carousels slider controller logic
+      const carouselStates = {
+        emb1: 0,
+        emb2: 0,
+        pcb1: 0
+      };
+
+      function shiftCarousel(carouselId, direction) {
+        const slidesContainer = document.getElementById(`slide-${carouselId}`);
+        const totalSlides = slidesContainer.querySelectorAll('img').length;
+        
+        let activeIdx = carouselStates[carouselId] + direction;
+        if (activeIdx < 0) {
+          activeIdx = totalSlides - 1;
+        } else if (activeIdx >= totalSlides) {
+          activeIdx = 0;
+        }
+        
+        setCarouselSlide(carouselId, activeIdx);
+      }
+
+      function setCarouselSlide(carouselId, slideIndex) {
+        carouselStates[carouselId] = slideIndex;
+        const slidesContainer = document.getElementById(`slide-${carouselId}`);
+        const offset = -slideIndex * 100;
+        slidesContainer.style.transform = `translateX(${offset}%)`;
+
+        // Update indicator dots styling
+        const indicators = slidesContainer.parentElement.querySelectorAll('.project-indicators .indicator-dot');
+        indicators.forEach((dot, index) => {
+          if (index === slideIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      // Video Play Modal / Lightbox controls
+      function openVideo(videoUrl) {
+        const modal = document.getElementById('video-lightbox');
+        const iframe = document.getElementById('lightbox-iframe');
+        iframe.src = videoUrl;
+        modal.classList.add('active');
+      }
+
+      function closeVideo() {
+        const modal = document.getElementById('video-lightbox');
+        const iframe = document.getElementById('lightbox-iframe');
+        iframe.src = "";
+        modal.classList.remove('active');
+      }
+
+      // Contact Form submit logic
+      function handleContactSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById('form-name').value;
+        const email = document.getElementById('form-email').value;
+        const message = document.getElementById('form-msg').value;
+        const statusBox = document.getElementById('form-status');
+        
+        statusBox.style.display = 'block';
+        statusBox.style.color = 'var(--accent-cyan)';
+        statusBox.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Establishing UART serial buffer connection...';
+
+        const apiOrigin = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === ''
+          ? 'http://localhost:5000' 
+          : ''; // relative path on production
+
+        setTimeout(() => {
+          statusBox.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Transmitting packet payload to Telegram... (ISP routing may take up to 30 seconds)';
+          
+          fetch(`${apiOrigin}/api/contact`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, email, message })
+          })
+          .then(async (response) => {
+            const data = await response.json();
+            if (response.ok && data.success) {
+              statusBox.style.color = 'var(--accent-green)';
+              statusBox.innerHTML = `<i class="fa-solid fa-check"></i> TX COMPLETE: Message packet successfully transmitted from sender "${name}" via Telegram!`;
+              document.getElementById('contact-form').reset();
+            } else {
+              throw new Error(data.error || 'Unknown error');
+            }
+          })
+          .catch((error) => {
+            console.error('Contact submit error:', error);
+            statusBox.style.color = '#ef4444';
+            statusBox.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> TX ERROR: Transmission failed [${error.message}]. Please verify backend config or try again.`;
+          });
+        }, 1200);
+      }
+
+      // Interactive Console / Terminal Simulator shell commands
+      const consoleInput = document.getElementById('console-input');
+      const consoleBody = document.getElementById('console-body');
+      
+      const commands = {
+        help: "Available system calls:\n  help        Display this menu\n  skills      Log primary hardware & software competencies\n  projects    Print core active engineering projects\n  hardware    Show hardware devices deployed at home/lab\n  contact     Display serial telemetry links (contact parameters)\n  clear       Flush terminal shell buffers",
+        skills: "Active Skills registers:\n  Languages: C, C++, Embedded C, Python\n  Real-Time: FreeRTOS task scheduling, Interrupt Handling, DMA, PWM, ADC/DAC\n  Platforms: ESP32, Arduino Uno, Jetson Nano\n  Digital Design: SystemVerilog, FPGA Design, RTL Design\n  Protocols: UART, SPI, I2C, CAN, MQTT",
+        projects: "Active Projects in Memory:\n  1. AI Power Touch-Free Alert System - ESP32, Jetson Nano, MQTT, OpenCV\n  2. Real-Time Avionics Primary Flight Display - C++, Python, UART, Sensor Filtering\n  3. FPGA JPEG-LS Lossless Compression - SystemVerilog, Intel Quartus Prime, ModelSim",
+        hardware: "Deployed Hardware in Vinay's Lab:\n  - Logic Analyzer, Oscilloscope\n  - FPGA Development Boards\n  - ESP32, Arduino Uno, Jetson Nano\n  - Various sensor breakout boards (I2C/SPI)",
+        contact: "Contact metrics config:\n  Email:      Vinaysharma17005@gmail.com\n  LinkedIn:   linkedin.com/in/vinay-sharma-643422310\n  GitHub:     github.com/Vinay-ix\n  Location:   Faridabad, Haryana, India"
+      };
+
+      consoleInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          const inputVal = consoleInput.value.trim().toLowerCase();
+          const responseContainer = document.createElement('div');
+          responseContainer.className = 'console-line';
+          
+          // Print user command echo
+          const echoLine = document.createElement('div');
+          echoLine.className = 'console-line';
+          echoLine.innerHTML = `<span class="console-prompt">&gt;</span> ${consoleInput.value}`;
+          consoleBody.insertBefore(echoLine, consoleInput.parentElement);
+          
+          if (inputVal === 'clear') {
+            // Keep console-input-row, delete everything else
+            const lines = consoleBody.querySelectorAll('.console-line');
+            lines.forEach(line => line.remove());
+          } else if (inputVal in commands) {
+            const reply = commands[inputVal];
+            responseContainer.innerHTML = reply.replace(/\n/g, '<br>');
+            consoleBody.insertBefore(responseContainer, consoleInput.parentElement);
+          } else if (inputVal === '') {
+            // Do nothing on empty enter
+          } else {
+            responseContainer.innerHTML = `<span style="color: #ef4444;">ERROR: Unknown command: "${inputVal}". Type 'help' for diagnostics menu.</span>`;
+            consoleBody.insertBefore(responseContainer, consoleInput.parentElement);
+          }
+          
+          consoleInput.value = '';
+          consoleBody.scrollTop = consoleBody.scrollHeight;
+        }
+      });
+
+      // Keep focus on input if clicking inside terminal box
+      consoleBody.addEventListener('click', () => {
+        consoleInput.focus();
+      });
+    </script>
+  </body>
+</html>
