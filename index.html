@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Vinay Sharma - Embedded Systems & Firmware Engineer. ECE student at VIT Chennai with experience in embedded firmware, IoT systems, FPGA design, and real-time communication protocols." />
+  <title>Vinay Sharma | Embedded Systems & Firmware Engineer</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1 class="header-name">Vinay Sharma</h1>
+      <div class="header-subtitle">Embedded Systems & Firmware Engineer</div>
+      <ul class="nav-menu" id="nav-links">
+        <li data-page="about"><a href="#about" onclick="navigateTo('about')">/about</a></li>
+        <li data-page="experience"><a href="#experience" onclick="navigateTo('experience')">/experience</a></li>
+        <li data-page="skills"><a href="#skills" onclick="navigateTo('skills')">/skills</a></li>
+        <li data-page="projects"><a href="#projects" onclick="navigateTo('projects')">/projects</a></li>
+        <li><a href="resume.pdf" class="nav-resume-btn" target="_blank" rel="noopener noreferrer">/resume</a></li>
+      </ul>
+    </header>
+
+    <!-- Main Content Flow -->
+    <main>
+
+      <!-- About View -->
+      <section id="about" class="page-view">
+        <div class="intro-section">
+          <p class="intro-lead">
+            <strong>Embedded Systems & Firmware Engineer</strong> passionate about the intersection of hardware and software. Recently graduated with a degree in B.Tech -ECE  from VIT Chennai, with hands-on experience in microcontroller programming, sensor integration, and RTOS. Eager to contribute to teams building reliable, real-time systems.
+          </p>
+          <p class="intro-desc">
+            As an ECE Intern at <strong>Mafkin Robotics</strong>, I debugged and integrated complex sensor suites and
+            communication interfaces on microcontrollers. I worked directly with the systems team to reduce hardware
+            integration latency, cutting diagnostic cycles by <strong>~25%</strong> and test failure rates by
+            <strong>~20%</strong>.
+          </p>
+          <p class="intro-desc">
+            I specialize in writing register-level driver code, utilizing real-time operating systems (FreeRTOS) for
+            multitasking firmware, and designing synthesizable RTL on FPGAs. I excel at bridging hardware protocols
+            (UART, SPI, I²C, CAN) with high-reliability data streams.
+          </p>
+          <p class="intro-tagline">
+            I favour robust architectures and clean code — Systems built to be maintained, not just shipped.
+          </p>
+        </div>
+
+        <!-- Interactive UART Console Telemetry -->
+        <div class="console-wrapper">
+          <div class="section-header">
+            <h2 class="section-title">UART Console Telemetry</h2>
+          </div>
+          <div class="console-container">
+            <div class="console-header">
+              <div class="console-dots">
+                <span class="console-dot red"></span>
+                <span class="console-dot yellow"></span>
+                <span class="console-dot green"></span>
+              </div>
+              <span class="console-title">vinay@firmware-shell:~$ uart0_telemetry</span>
+            </div>
+            <div class="console-body" id="console-body">
+              <div class="console-line">Vinay Embedded Shell v1.1.0 telemetry buffers ready.</div>
+              <div class="console-line">MCU Targets: ESP32 SoC & FPGA RTL cores | Shell Protocol: UART0</div>
+              <div class="console-line">Type <span style="color: var(--accent-color); font-weight: 500;">'help'</span>
+                to query active registers.</div>
+              <div class="console-line"></div>
+              <div class="console-input-row">
+                <span class="console-prompt">&gt;</span>
+                <input type="text" class="console-input" id="console-input" autofocus autocomplete="off"
+                  spellcheck="false" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What you get Section -->
+        <div class="section-header" style="margin-top: 4rem;">
+          <h2 class="section-title">What you get</h2>
+        </div>
+
+        <div class="what-grid">
+          <div class="what-column">
+            <div class="what-item">
+              <h3 class="what-title">Firmware & RTOS</h3>
+              <p class="what-desc">Bare-metal C/C++ microcontroller programming, deterministic FreeRTOS setups, task
+                prioritization, semaphores, and DMA-driven peripheral controls.</p>
+            </div>
+            <div class="what-item">
+              <h3 class="what-title">Protocols & Telemetry</h3>
+              <p class="what-desc">Stable communication links utilizing UART, SPI, I²C, and CAN. IoT connectivity with
+                MQTT for wireless telemetry streams.</p>
+            </div>
+          </div>
+          <div class="what-column">
+            <div class="what-item">
+              <h3 class="what-title">Digital Design & RTL</h3>
+              <p class="what-desc">RTL coding in SystemVerilog, FPGA verification on Intel Cyclone, ModelSim testbench
+                simulation, and fixing timing violations.</p>
+            </div>
+            <div class="what-item">
+              <h3 class="what-title">Hardware Debugging</h3>
+              <p class="what-desc">Logic analyzer diagnostics, oscilloscope waveform measurements, hardware-in-the-loop
+                sensor calibration, and PCB tracing checks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Let's Talk CTA & Social Footer -->
+        <div class="cta-container" style="display: flex; flex-direction: column; gap: 2rem;">
+          <div>
+            <a href="https://linkedin.com/in/vinay-sharma-643422310" target="_blank" rel="noopener noreferrer" class="btn-cta">Let's talk &rarr;</a>
+          </div>
+
+          <div class="footer-socials"
+            style="border-top: 2px solid var(--border-color); padding-top: 1.5rem; margin-bottom: 0; width: 100%;">
+            <a href="https://linkedin.com/in/vinay-sharma-643422310" target="_blank" rel="noopener noreferrer" class="social-icon"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Vinay-ix" target="_blank" rel="noopener noreferrer" class="social-icon"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/u/vinayy_79/" target="_blank" rel="noopener noreferrer" class="social-icon leetcode-icon" title="LeetCode">
+              <svg viewBox="0 0 384 512" aria-hidden="true" focusable="false" width="18" height="18" fill="currentColor"></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience View -->
+      <section id="experience" class="page-view">
+        <div class="experience-quicklinks">
+          <button class="quicklink-btn active" id="btn-lnk-mafkin" onclick="jumpToCompany('exp-mafkin')">Mafkin Robotics
+            (Internship)</button>
+          <button class="quicklink-btn" id="btn-lnk-vit" onclick="jumpToCompany('exp-vit')">VIT Chennai
+            (Academics)</button>
+        </div>
+
+        <!-- Mafkin Robotics Block -->
+        <div class="experience-block" id="exp-mafkin">
+          <div class="experience-left">
+            <div class="role-header-line">
+              <span class="role-company">Mafkin Robotics <span class="role-badge-now">Intern</span></span>
+              <span class="role-meta-right">Oct 2024 - Jan 2025 &bull; Chennai,TN,IN</span>
+            </div>
+            <div class="role-title-row">
+              <span class="role-designation">Embedded Systems Intern</span>
+              <span class="role-tag-badge">Firmware & Hardware</span>
+            </div>
+            <p class="role-summary">
+              Debugged and integrated embedded subsystems (microcontroller firmware, sensors, and communication
+              interfaces) for robotics platforms. Cut diagnostic loops and optimized code routines directly in
+              cooperation with lead hardware engineers.
+            </p>
+
+            <div class="role-subsection-title">Sub-System Debugging</div>
+            <p class="role-subsection-desc">
+              Integrated sensor arrays (IMUs, LiDAR) over SPI and I²C protocols. Analyzed oscilloscope and logic
+              analyzer waveforms to isolate signaling delays.
+            </p>
+
+            <div class="role-subsection-title">Firmware Optimization</div>
+            <p class="role-subsection-desc">
+              Wrote register-level configuration drivers in C and optimized interrupt handlers, decreasing scheduler
+              jitter and data collection overhead.
+            </p>
+          </div>
+
+          <div class="experience-right">
+            <div class="experience-metrics-card">
+              <div class="metric-divider">
+                <div class="metric-num">~25%</div>
+                <div class="metric-label">Tuning Diagnostics</div>
+                <div class="metric-text">Resolved timing anomalies between physical sensor nodes and MCU
+                  sub-controllers.</div>
+              </div>
+              <div class="metric-divider">
+                <div class="metric-num">~20%</div>
+                <div class="metric-label">Test Reliability</div>
+                <div class="metric-text">Stabilized driver routines to reduce communication lockups under stress tests.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIT Chennai Block -->
+        <div class="experience-block" id="exp-vit">
+          <div class="experience-left">
+            <div class="role-header-line">
+              <span class="role-company">VIT Chennai</span>
+              <span class="role-meta-right">2022 - 2026 &bull; Chennai,TN, IN</span>
+            </div>
+            <div class="role-title-row">
+              <span class="role-designation">B.Tech - Electronics and Communication Engineering</span>
+              <span class="role-tag-badge">Academic Core</span>
+            </div>
+            <p class="role-summary">
+              Focused coursework on embedded processor architecture, RTOS multitasking logic, synthesizable digital VLSI
+              design, and real-time DSP filters.
+            </p>
+
+            <div class="role-subsection-title">Digital RTL VLSI Design</div>
+            <p class="role-subsection-desc">
+              Designed synthesizable hardware cores in SystemVerilog, verified timing, and resolved CDC (clock-domain
+              crossing) issues.
+            </p>
+
+            <div class="role-subsection-title">Multitasking Operating Systems</div>
+            <p class="role-subsection-desc">
+              Applied FreeRTOS task synchronization APIs (mutexes, semaphores, queues) to MCU control designs.
+            </p>
+          </div>
+
+          <div class="experience-right">
+            <div class="experience-metrics-card">
+              <div class="metric-divider">
+                <div class="metric-num">9.14</div>
+                <div class="metric-label">CGPA Performance</div>
+                <div class="metric-text">Top-tier academic marks across digital logic, signals, and systems course
+                  parameters.</div>
+              </div>
+              <div class="metric-divider">
+                <div class="metric-num">300+</div>
+                <div class="metric-label">LeetCode DSA</div>
+                <div class="metric-text">Developed strong computational structures and algorithmic problem-solving
+                  logic.</div>
+              </div>
+              <div class="metric-divider">
+                <div class="metric-num">GATE</div>
+                <div class="metric-label">ECE Qualified</div>
+                <div class="metric-text">Validated core proficiency in electronic devices and communications.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills View -->
+      <section id="skills" class="page-view">
+        <!-- Top Highlights Pills -->
+        <div class="skills-highlight-box">
+          <span class="skills-pill-tag">Embedded C</span>
+          <span class="skills-pill-tag">SystemVerilog</span>
+          <span class="skills-pill-tag">FreeRTOS</span>
+          <span class="skills-pill-tag">FPGA Design</span>
+          <span class="skills-pill-tag">UART/SPI/I2C</span>
+          <span class="skills-pill-tag">ModelSim</span>
+          <span class="skills-pill-tag">Logic Analyzer</span>
+          <span class="skills-pill-tag">Data Structures</span>
+          <span class="skills-pill-tag">MQTT</span>
+          <span class="skills-pill-tag">Python Scripting</span>
+        </div>
+
+        <!-- Core Section -->
+        <div class="skills-block-card">
+          <div class="skills-block-title">Core</div>
+          <div class="skills-block-subtitle">Languages, kernels, and paradigms I apply to write robust, real-time code.
+          </div>
+          <div class="skills-badge-group">
+            <div class="badge-pill"><i class="fa-solid fa-code"></i> C</div>
+            <div class="badge-pill"><i class="fa-solid fa-code"></i> C++</div>
+            <div class="badge-pill"><i class="fa-solid fa-microchip"></i> Embedded C</div>
+            <div class="badge-pill"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="badge-pill"><i class="fa-solid fa-clock"></i> FreeRTOS</div>
+            <div class="badge-pill"><i class="fa-solid fa-diagram-project"></i> Data Structures</div>
+            <div class="badge-pill"><i class="fa-solid fa-microchip"></i> SystemVerilog</div>
+          </div>
+        </div>
+
+        <!-- Two-Column Grid -->
+        <div class="skills-two-column">
+          <!-- Left Card -->
+          <div class="skills-block-card">
+            <div class="skills-block-title">Embedded & Hardware</div>
+            <div class="skills-block-subtitle">Platforms, hardware modules, and telemetry systems.</div>
+            <div class="skills-badge-group">
+              <div class="badge-pill"><i class="fa-solid fa-microchip"></i> ESP32</div>
+              <div class="badge-pill"><i class="fa-solid fa-microchip"></i> Arduino Uno</div>
+              <div class="badge-pill"><i class="fa-solid fa-robot"></i> Jetson Nano</div>
+              <div class="badge-pill"><i class="fa-solid fa-circle-nodes"></i> Sensor Integration</div>
+              <div class="badge-pill"><i class="fa-solid fa-wave-square"></i> Oscilloscope</div>
+              <div class="badge-pill"><i class="fa-solid fa-network-wired"></i> Telemetry</div>
+            </div>
+          </div>
+
+          <!-- Right Card -->
+          <div class="skills-block-card">
+            <div class="skills-block-title">Protocols & RTL</div>
+            <div class="skills-block-subtitle">Hardware buses, synthesizers, and design packages.</div>
+            <div class="skills-badge-group">
+              <div class="badge-pill"><i class="fa-solid fa-network-wired"></i> UART, SPI, I²C</div>
+              <div class="badge-pill"><i class="fa-solid fa-network-wired"></i> CAN Bus</div>
+              <div class="badge-pill"><i class="fa-solid fa-cloud-arrow-up"></i> MQTT (IoT)</div>
+              <div class="badge-pill"><i class="fa-solid fa-chart-line"></i> ModelSim</div>
+              <div class="badge-pill"><i class="fa-solid fa-compass"></i> Intel Quartus</div>
+              <div class="badge-pill"><i class="fa-brands fa-git-alt"></i> Git</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects View -->
+      <section id="projects" class="page-view">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-tabs">
+            <button class="tab-btn active" id="tab-embedded" onclick="filterProjects('embedded')">Embedded &
+              IoT</button>
+            <button class="tab-btn" id="tab-pcb" onclick="filterProjects('pcb')">FPGA & RTL Design</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Project 1: AI Power Touch-Free Alert System -->
+          <div class="project-card embedded-proj" data-category="embedded">
+            <div class="project-body">
+              <div class="project-header-row">
+                <div>
+                  <div class="project-title-row">
+                    <h3 class="project-title">AI Power Touch-Free Alert System</h3>
+                    <span class="project-badge">Embedded & IoT</span>
+                  </div>
+                  <div class="project-meta">July 2025 - Dec 2025 · Embedded sensor network with MQTT telemetry</div>
+                </div>
+                <div class="project-action-group">
+                  <a href="https://github.com/Vinay-ix/AI-Nurse-Call-System" target="_blank" class="project-link project-link-icon" title="GitHub repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <button type="button" class="project-link project-link-icon" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1')" title="Video demo">
+                    <i class="fa-solid fa-video"></i>
+                  </button>
+                </div>
+              </div>
+              <p class="project-desc">
+                Integrated ESP32 sensor nodes with MQTT communication and OpenCV blink detection on a Jetson Nano. Programmed low-latency (&lt;2s) telemetry and automated alert orchestration.
+              </p>
+              <div class="project-subsection-title">Highlights</div>
+              <p class="project-subsection-desc">
+                Designed the alert system to reliably recognize presence and trigger remote data capture across distributed endpoints. Reduced manual inspection cycles by automating the sensor pipeline.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Jetson Nano</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <div class="project-metrics-card">
+                <div class="metric-num">2s</div>
+                <div class="metric-label">Latency</div>
+                <div class="metric-text">Delivered sub-2-second telemetry feedback for the alert pipeline.</div>
+              </div>
+              <div class="project-metrics-card">
+                <div class="metric-num">MQTT</div>
+                <div class="metric-label">Protocol</div>
+                <div class="metric-text">Used MQTT for robust sensor-to-cloud data streaming and remote status updates.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Avionics Display -->
+          <div class="project-card embedded-proj" data-category="embedded">
+            <div class="project-body">
+              <div class="project-header-row">
+                <div>
+                  <div class="project-title-row">
+                    <h3 class="project-title">Avionics Primary Flight Display</h3>
+                    <span class="project-badge">Embedded Systems</span>
+                  </div>
+                  <div class="project-meta">Jul 2024 · Real-time flight instrumentation and UART telemetry</div>
+                </div>
+                <div class="project-action-group">
+                  <a href="https://github.com/Vinay-ix/Real-Time-Avionics-PFD-ESP32" target="_blank" class="project-link project-link-icon" title="GitHub repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <button type="button" class="project-link project-link-icon" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1')" title="Video demo">
+                    <i class="fa-solid fa-video"></i>
+                  </button>
+                </div>
+              </div>
+              <p class="project-desc">
+                Built a real-time data acquisition pipeline for flight parameters, with UART-based serialization and noise filtering to preserve signal integrity.
+              </p>
+              <div class="project-subsection-title">Value Delivered</div>
+              <p class="project-subsection-desc">
+                Created a robust telemetry path from sensor data through the display stack, enabling dependable status reporting in harsh electrical environments.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">I2C</span>
+                <span class="tech-tag">UART</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Signal Processing</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <div class="project-metrics-card">
+                <div class="metric-num">UART , I2C</div>
+                <div class="metric-label">Interface</div>
+                <div class="metric-text">Maintained reliable serial transfer across avionics hardware and flight display modules.</div>
+              </div>
+              <div class="project-metrics-card">
+                <div class="metric-num">Real-Time</div>
+                <div class="metric-label">Telemetry</div>
+                <div class="metric-text">Processed live flight data with low jitter and deterministic update cadence.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: JPEG-LS Compression FPGA -->
+          <div class="project-card pcb" data-category="pcb">
+            <div class="project-body">
+              <div class="project-header-row">
+                <div>
+                  <div class="project-title-row">
+                    <h3 class="project-title">Lossless JPEG-LS FPGA Compression</h3>
+                    <span class="project-badge">FPGA & RTL Design</span>
+                  </div>
+                  <div class="project-meta">May 2024 · SystemVerilog compression pipeline with timing closure</div>
+                </div>
+                <div class="project-action-group">
+                  <a href="https://github.com/Vinay-ix" target="_blank" class="project-link project-link-icon" title="GitHub repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <button type="button" class="project-link project-link-icon" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1')" title="Video demo">
+                    <i class="fa-solid fa-video"></i>
+                  </button>
+                </div>
+              </div>
+              <p class="project-desc">
+                Implemented an FPGA-based image compression core using SystemVerilog, resolving CDC and timing closure to hit a stable 103 MHz operating point.
+              </p>
+              <div class="project-subsection-title">Design Focus</div>
+              <p class="project-subsection-desc">
+                Built a scalable RTL pipeline with predictable throughput and image fidelity guarantees, then verified behavior through simulation and synthesis reports.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">SystemVerilog</span>
+                <span class="tech-tag">Quartus Prime</span>
+                <span class="tech-tag">ModelSim</span>
+                <span class="tech-tag">RTL</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <div class="project-metrics-card">
+                <div class="metric-num">103 MHz</div>
+                <div class="metric-label">Clock Rate</div>
+                <div class="metric-text">Achieved stable timing closure for the JPEG-LS compression core.</div>
+              </div>
+              <div class="project-metrics-card">
+                <div class="metric-num">Lossless</div>
+                <div class="metric-label">Compression</div>
+                <div class="metric-text">Preserved image data integrity while reducing bandwidth for the FPGA pipeline.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-copy">&copy; 2026 Vinay Sharma | Built to last.</div>
+    </footer>
+  </div>
+
+  <!-- Video Modal Lightbox Overlay -->
+  <div class="lightbox-modal" id="video-lightbox" onclick="closeVideo()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeVideo()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-video-container">
+        <iframe id="lightbox-iframe" src="" allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Application Controller -->
+  <script>
+    // SPA Navigation Toggling Logic
+    function navigateTo(pageId) {
+      // Select pages
+      const pages = document.querySelectorAll('.page-view');
+      pages.forEach(p => p.classList.remove('active'));
+
+      const targetPage = document.getElementById(pageId);
+      if (targetPage) {
+        targetPage.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Update header navbar states
+      const navItems = document.querySelectorAll('.nav-menu li');
+      navItems.forEach(item => {
+        if (item.getAttribute('data-page') === pageId) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+
+    // Read Hash URL parameters on load to trigger route
+    function checkHashRoute() {
+      const hash = window.location.hash.substring(1);
+      const validPages = ['about', 'experience', 'skills', 'projects'];
+      if (validPages.includes(hash)) {
+        navigateTo(hash);
+      } else {
+        navigateTo('about');
+      }
+    }
+
+    window.addEventListener('hashchange', checkHashRoute);
+    window.addEventListener('load', checkHashRoute);
+
+    // Experience view quick scroll anchor helper
+    function jumpToCompany(blockId) {
+      // Highlight active subnav button
+      const btnMafkin = document.getElementById('btn-lnk-mafkin');
+      const btnVit = document.getElementById('btn-lnk-vit');
+
+      if (blockId === 'exp-mafkin') {
+        btnMafkin.classList.add('active');
+        btnVit.classList.remove('active');
+      } else {
+        btnMafkin.classList.remove('active');
+        btnVit.classList.add('active');
+      }
+
+      const element = document.getElementById(blockId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Projects Tab Filter controller
+    function filterProjects(category) {
+      const tabEmb = document.getElementById('tab-embedded');
+      const tabPcb = document.getElementById('tab-pcb');
+
+      if (category === 'embedded') {
+        tabEmb.classList.add('active');
+        tabPcb.classList.remove('active');
+      } else {
+        tabEmb.classList.remove('active');
+        tabPcb.classList.add('active');
+      }
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Card Carousels slider controller logic
+    const carouselStates = {
+      emb1: 0,
+      emb2: 0,
+      pcb1: 0
+    };
+
+    function shiftCarousel(carouselId, direction) {
+      const slidesContainer = document.getElementById(`slide-${carouselId}`);
+      const totalSlides = slidesContainer.querySelectorAll('img').length;
+
+      let activeIdx = carouselStates[carouselId] + direction;
+      if (activeIdx < 0) {
+        activeIdx = totalSlides - 1;
+      } else if (activeIdx >= totalSlides) {
+        activeIdx = 0;
+      }
+
+      setCarouselSlide(carouselId, activeIdx);
+    }
+
+    function setCarouselSlide(carouselId, slideIndex) {
+      carouselStates[carouselId] = slideIndex;
+      const slidesContainer = document.getElementById(`slide-${carouselId}`);
+      const offset = -slideIndex * 100;
+      slidesContainer.style.transform = `translateX(${offset}%)`;
+
+      const indicators = slidesContainer.parentElement.querySelectorAll('.project-indicators .indicator-dot');
+      indicators.forEach((dot, index) => {
+        if (index === slideIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+
+    // Video Play Modal / Lightbox controls
+    function openVideo(videoUrl) {
+      const modal = document.getElementById('video-lightbox');
+      const iframe = document.getElementById('lightbox-iframe');
+      iframe.src = videoUrl;
+      modal.classList.add('active');
+    }
+
+    function closeVideo() {
+      const modal = document.getElementById('video-lightbox');
+      const iframe = document.getElementById('lightbox-iframe');
+      iframe.src = "";
+      modal.classList.remove('active');
+    }
+
+    // Interactive Console / Terminal Simulator shell commands
+    const consoleInput = document.getElementById('console-input');
+    const consoleBody = document.getElementById('console-body');
+
+    const commands = {
+      help: "Available system calls:\n  help        Display this menu\n  skills      Log primary hardware & software competencies\n  projects    Print core active engineering projects\n  hardware    Show hardware devices deployed in lab\n  clear       Flush terminal shell buffers",
+      skills: "Active Skills registers:\n  Languages: C, C++, Embedded C, Python, SystemVerilog\n  Real-Time: FreeRTOS task scheduling, Interrupt Handling, DMA, PWM, ADC/DAC\n  Protocols: UART, SPI, I2C, CAN, MQTT\n  Verification: RTL Design, FPGA Prototyping, ModelSim simulations",
+      projects: "Active Projects in Memory:\n  1. AI Power Touch-Free Alert System - ESP32, Jetson Nano, MQTT, OpenCV\n  2. Real-Time Avionics Primary Flight Display - C++, Python, UART, Sensor Filtering\n  3. FPGA JPEG-LS Lossless Compression - SystemVerilog, Intel Quartus Prime, ModelSim",
+      hardware: "Deployed Hardware in Vinay's Lab:\n  - Logic Analyzer, Oscilloscope\n  - FPGA Development Boards\n  - ESP32, Arduino Uno, Jetson Nano\n  - Various sensor breakout boards (I2C/SPI)"
+    };
+
+    consoleInput.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        const inputVal = consoleInput.value.trim().toLowerCase();
+        const responseContainer = document.createElement('div');
+        responseContainer.className = 'console-line';
+
+        const echoLine = document.createElement('div');
+        echoLine.className = 'console-line';
+        echoLine.innerHTML = `<span class="console-prompt">&gt;</span> ${consoleInput.value}`;
+        consoleBody.insertBefore(echoLine, consoleInput.parentElement);
+
+        if (inputVal === 'clear') {
+          const lines = consoleBody.querySelectorAll('.console-line');
+          lines.forEach(line => line.remove());
+        } else if (inputVal in commands) {
+          const reply = commands[inputVal];
+          responseContainer.innerHTML = reply.replace(/\n/g, '<br>');
+          consoleBody.insertBefore(responseContainer, consoleInput.parentElement);
+        } else if (inputVal === '') {
+          // Do nothing on empty enter
+        } else {
+          responseContainer.innerHTML = `<span style="color: #ef4444;">ERROR: Unknown command: "${inputVal}". Type 'help' for diagnostics.</span>`;
+          consoleBody.insertBefore(responseContainer, consoleInput.parentElement);
+        }
+
+        consoleInput.value = '';
+        consoleBody.scrollTop = consoleBody.scrollHeight;
+      }
+    });
+
+    consoleBody.addEventListener('click', () => {
+      consoleInput.focus();
+    });
+  </script>
+</body>
+
+</html>
