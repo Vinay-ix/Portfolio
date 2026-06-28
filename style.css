@@ -303,8 +303,17 @@ header {
   transition: var(--transition-smooth);
 }
 
-.social-icon svg {
+.social-icon svg,
+.social-icon i,
+.leetcode-letter {
   display: block;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.leetcode-letter {
+  font-weight: 700;
+  font-family: var(--font-sans);
 }
 
 .social-icon:hover {
