@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Vinay Sharma - Embedded Systems & Firmware Engineer. ECE student at VIT Chennai with experience in embedded firmware, IoT systems, FPGA design, and real-time communication protocols." />
-  <title>Vinay Sharma | Embedded Systems </title>
+    content="Vinay Sharma - Embedded Systems & Firmware Engineer. Graduate Engineer Trainee at JKW Innovatics, working on embedded firmware, IoT systems, FPGA design, and real-time communication protocols." />
+  <title>Vinay Sharma | Embedded Systems &amp; Firmware</title>
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css" />
   <!-- FontAwesome Icons -->
@@ -14,49 +14,48 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="container">
     <!-- Header Section -->
     <header>
-      <h1 class="header-name">Vinay Sharma</h1>
-      <div class="header-subtitle">Embedded Systems & Firmware Engineer</div>
+      <a href="#about" class="brand" aria-label="Vinay Sharma home"><span class="brand-mark">vs<span>.</span></span><span class="brand-name">Vinay Sharma</span></a>
+      <div class="header-subtitle">EMBEDDED SYSTEMS / FIRMWARE</div>
       <ul class="nav-menu" id="nav-links">
-        <li data-page="about"><a href="#about" onclick="navigateTo('about')">/about</a></li>
-        <li data-page="experience"><a href="#experience" onclick="navigateTo('experience')">/experience</a></li>
-        <li data-page="skills"><a href="#skills" onclick="navigateTo('skills')">/skills</a></li>
-        <li data-page="projects"><a href="#projects" onclick="navigateTo('projects')">/projects</a></li>
-        <li><a href="resume.pdf" class="nav-resume-btn" target="_blank" rel="noopener noreferrer">/resume</a></li>
+        <li data-page="about"><a href="#about" onclick="navigateTo('about')">About</a></li>
+        <li data-page="experience"><a href="#experience" onclick="navigateTo('experience')">Experience</a></li>
+        <li data-page="skills"><a href="#skills" onclick="navigateTo('skills')">Skills</a></li>
+        <li data-page="projects"><a href="#projects" onclick="navigateTo('projects')">Projects</a></li>
+        <li><a href="resume.pdf" class="nav-resume-btn" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </header>
 
     <!-- Main Content Flow -->
-    <main>
+    <main id="main-content">
 
       <!-- About View -->
-      <section id="about" class="page-view">
-        <div class="intro-section">
-          <p class="intro-lead">
-            <strong>Embedded Systems & Firmware Engineer</strong> passionate about the intersection of hardware and software. Recently graduated with a degree in B.Tech -ECE  from VIT Chennai, with hands-on experience in microcontroller programming, sensor integration, and RTOS. Eager to contribute to teams building reliable, real-time systems.
-          </p>
-          <p class="intro-desc">
-            As an ECE Intern at <strong>Mafkin Robotics</strong>, I debugged and integrated complex sensor suites and
-            communication interfaces on microcontrollers. I worked directly with the systems team to reduce hardware
-            integration latency, cutting diagnostic cycles by <strong>~25%</strong> and test failure rates by
-            <strong>~20%</strong>.
-          </p>
-          <p class="intro-desc">
-            I specialize in writing register-level driver code, utilizing real-time operating systems (FreeRTOS) for
-            multitasking firmware, and designing synthesizable RTL on FPGAs. I excel at bridging hardware protocols
-            (UART, SPI, I²C, CAN) with high-reliability data streams.
-          </p>
-          <p class="intro-tagline">
-            I favour robust architectures and clean code — Systems built to be maintained, not just shipped.
-          </p>
+      <section id="about" class="page-view active">
+        <div class="intro-section hero">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> FIRMWARE · ROBOTICS · DIGITAL DESIGN</p>
+            <h1 class="hero-title">Where hardware<br>meets <em>possibility.</em></h1>
+            <p class="hero-description">I'm Vinay, an embedded systems &amp; firmware engineer building the software that brings hardware to life.</p>
+            <p class="hero-detail">Currently a Graduate Engineer Trainee in R&amp;D at <strong>JKW Innovatics</strong>, working on warehouse robotics, real-time control, and sensor integration.</p>
+            <div class="hero-actions"><a href="#projects" class="button-primary">Explore my work <span aria-hidden="true">↗</span></a><a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="button-secondary">View resume <span aria-hidden="true">↓</span></a></div>
+            <div class="hero-footnote">Based in Greater Noida, India <span> / </span> B.Tech ECE · VIT Chennai</div>
+          </div>
+          <div class="circuit-art" aria-hidden="true"><div class="circuit-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="chip"><span>VS</span><small>FIRMWARE ENGINEER</small></div><span class="chip-label label-top">INPUT → IDEAS</span><span class="chip-label label-bottom">OUTPUT → REAL SYSTEMS</span><span class="circuit-node node-one"></span><span class="circuit-node node-two"></span></div>
+        </div>
+        <div class="expertise-strip"><span>C / C++</span><span>FreeRTOS</span><span>ESP32</span><span>UART · SPI · I²C</span><span>SystemVerilog</span></div>
+        <div class="section-header featured-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 class="section-title">Built from the ground up.</h2></div><a href="#projects" class="section-link">All projects ↗</a></div>
+        <div class="featured-grid">
+          <a class="featured-card" href="https://github.com/Vinay-ix/AI-Nurse-Call-System" target="_blank" rel="noopener noreferrer"><div class="feature-visual visual-network" aria-hidden="true"><span class="diagram-node">ESP32</span><span class="diagram-line"></span><span class="diagram-node central">MQTT</span><span class="diagram-line"></span><span class="diagram-node">JETSON</span></div><div class="feature-copy"><span class="eyebrow">01 / EMBEDDED &amp; IoT <span class="feature-arrow">↗</span></span><h3>Touch-free alert system</h3><p>Sensor nodes, blink detection, and a connected alert pipeline. Built with ESP32, Jetson Nano, and MQTT.</p><span class="feature-tag">ESP32 / OpenCV / Python</span></div></a>
+          <a class="featured-card" href="https://github.com/Vinay-ix/Real-Time-Avionics-PFD-ESP32" target="_blank" rel="noopener noreferrer"><div class="feature-visual visual-flight" aria-hidden="true"><div class="horizon"><span>— — ┼ — —</span><small>ATTITUDE / TELEMETRY</small></div></div><div class="feature-copy"><span class="eyebrow">02 / REAL-TIME SYSTEMS <span class="feature-arrow">↗</span></span><h3>Avionics flight display</h3><p>From sensor readings to flight instrumentation through UART telemetry and signal filtering.</p><span class="feature-tag">C++ / I²C / UART</span></div></a>
         </div>
 
-        <!-- Interactive UART Console Telemetry -->
+        <!-- Interactive A little firmware personality. -->
         <div class="console-wrapper">
           <div class="section-header">
-            <h2 class="section-title">UART Console Telemetry</h2>
+            <h2 class="section-title">A little firmware personality.</h2>
           </div>
           <div class="console-container">
             <div class="console-header">
@@ -70,20 +69,20 @@
             <div class="console-body" id="console-body">
               <div class="console-line">Vinay Embedded Shell v1.1.0 telemetry buffers ready.</div>
               <div class="console-line">MCU Targets: ESP32 SoC & FPGA RTL cores | Shell Protocol: UART0</div>
-              <div class="console-line">Type <span style="color: var(--accent-color); font-weight: 500;">'help'</span>to query active registers.</div>
+              <div class="console-line">Type <span style="color: var(--accent-color); font-weight: 500;">'help'</span> to explore this simulated shell.</div>
               <div class="console-line"></div>
               <div class="console-input-row">
                 <span class="console-prompt">&gt;</span>
-                <input type="text" class="console-input" id="console-input" autofocus autocomplete="off"
+                <input type="text" class="console-input" id="console-input" aria-label="Simulated terminal command" autocomplete="off"
                   spellcheck="false" />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- What you get Section -->
+        <!-- What I bring to the bench. Section -->
         <div class="section-header" style="margin-top: 4rem;">
-          <h2 class="section-title">What you get</h2>
+          <h2 class="section-title">What I bring to the bench.</h2>
         </div>
 
         <div class="what-grid">
@@ -121,9 +120,9 @@
 
           <div class="footer-socials"
             style="border-top: 2px solid var(--border-color); padding-top: 1.5rem; margin-bottom: 0; width: 100%;">
-            <a href="https://linkedin.com/in/vinay-sharma-643422310" target="_blank" rel="noopener noreferrer" class="social-icon"><i
+            <a href="https://linkedin.com/in/vinay-sharma-643422310" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i
                 class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/Vinay-ix" target="_blank" rel="noopener noreferrer" class="social-icon"><i
+            <a href="https://github.com/Vinay-ix" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i
                 class="fa-brands fa-github"></i></a>
             <a href="https://leetcode.com/u/vinayy_79/" target="_blank" rel="noopener noreferrer" class="social-icon leetcode-icon" title="LeetCode" aria-label="LeetCode">
               <span class="leetcode-letter">L</span>
@@ -155,7 +154,7 @@
               <span class="role-tag-badge">Robotics & Firmware</span>
             </div>
             <p class="role-summary">
-              Full-time Graduate Engineer Trainee in the R&D division working on futuristic warehouse automation robots. Contributing to embedded firmware pipelines, real-time control systems, and sensor integration for autonomous material handling platforms.
+              Full-time Graduate Engineer Trainee in the R&D division working on autonomous warehouse robots. Contributing to embedded firmware pipelines, real-time control systems, and sensor integration for autonomous material handling platforms.
             </p>
 
             <div class="role-subsection-title">Warehouse Robot Firmware</div>
@@ -174,7 +173,7 @@
               <div class="metric-divider">
                 <div class="metric-num">R&D</div>
                 <div class="metric-label">Division Focus</div>
-                <div class="metric-text">Contributing to cutting-edge warehouse automation and futuristic robotics development.</div>
+                <div class="metric-text">Contributing to warehouse automation and robotics development.</div>
               </div>
             </div>
           </div>
@@ -368,12 +367,9 @@
                   <div class="project-meta">July 2025 - Dec 2025 · Embedded sensor network with MQTT telemetry</div>
                 </div>
                 <div class="project-action-group">
-                  <a href="https://github.com/Vinay-ix/AI-Nurse-Call-System" target="_blank" class="project-link project-link-icon" title="GitHub repository">
+                  <a href="https://github.com/Vinay-ix/AI-Nurse-Call-System" target="_blank" rel="noopener noreferrer" class="project-link project-link-icon" title="GitHub repository">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <button type="button" class="project-link project-link-icon" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1')" title="Video demo">
-                    <i class="fa-solid fa-video"></i>
-                  </button>
                 </div>
               </div>
               <p class="project-desc">
@@ -417,12 +413,9 @@
                   <div class="project-meta">Jul 2024 · Real-time flight instrumentation and UART telemetry</div>
                 </div>
                 <div class="project-action-group">
-                  <a href="https://github.com/Vinay-ix/Real-Time-Avionics-PFD-ESP32" target="_blank" class="project-link project-link-icon" title="GitHub repository">
+                  <a href="https://github.com/Vinay-ix/Real-Time-Avionics-PFD-ESP32" target="_blank" rel="noopener noreferrer" class="project-link project-link-icon" title="GitHub repository">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <button type="button" class="project-link project-link-icon" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1')" title="Video demo">
-                    <i class="fa-solid fa-video"></i>
-                  </button>
                 </div>
               </div>
               <p class="project-desc">
@@ -466,12 +459,9 @@
                   <div class="project-meta">May 2024 · SystemVerilog compression pipeline with timing closure</div>
                 </div>
                 <div class="project-action-group">
-                  <a href="https://github.com/Vinay-ix" target="_blank" class="project-link project-link-icon" title="GitHub repository">
+                  <a href="https://github.com/Vinay-ix" target="_blank" rel="noopener noreferrer" class="project-link project-link-icon" title="GitHub profile; FPGA source not linked" aria-label="Visit GitHub profile">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <button type="button" class="project-link project-link-icon" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1')" title="Video demo">
-                    <i class="fa-solid fa-video"></i>
-                  </button>
                 </div>
               </div>
               <p class="project-desc">
@@ -509,18 +499,8 @@
 
     <!-- Footer Section -->
     <footer>
-      <div class="footer-copy">&copy; 2026 Vinay Sharma | Built to last.</div>
+      <div class="footer-copy">&copy; 2026 Vinay Sharma | Designed with intention. Built close to the hardware.</div>
     </footer>
-  </div>
-
-  <!-- Video Modal Lightbox Overlay -->
-  <div class="lightbox-modal" id="video-lightbox" onclick="closeVideo()">
-    <div class="lightbox-content" onclick="event.stopPropagation()">
-      <button class="lightbox-close" onclick="closeVideo()"><i class="fa-solid fa-xmark"></i></button>
-      <div class="lightbox-video-container">
-        <iframe id="lightbox-iframe" src="" allowfullscreen allow="autoplay"></iframe>
-      </div>
-    </div>
   </div>
 
   <!-- JavaScript Application Controller -->
@@ -537,6 +517,10 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
+      document.querySelectorAll('.nav-menu a').forEach(a => {
+        if (a.getAttribute('href') === '#' + pageId) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
       // Update header navbar states
       const navItems = document.querySelectorAll('.nav-menu li');
       navItems.forEach(item => {
@@ -560,26 +544,16 @@
     }
 
     window.addEventListener('hashchange', checkHashRoute);
-    window.addEventListener('load', checkHashRoute);
+    window.addEventListener('load', () => { checkHashRoute(); filterProjects('embedded'); });
 
     // Experience view quick scroll anchor helper
     function jumpToCompany(blockId) {
-      // Highlight active subnav button
-      const btnMafkin = document.getElementById('btn-lnk-mafkin');
-      const btnVit = document.getElementById('btn-lnk-vit');
-
-      if (blockId === 'exp-mafkin') {
-        btnMafkin.classList.add('active');
-        btnVit.classList.remove('active');
-      } else {
-        btnMafkin.classList.remove('active');
-        btnVit.classList.add('active');
-      }
-
-      const element = document.getElementById(blockId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      document.querySelectorAll('.quicklink-btn').forEach(button => {
+        const selected = button.id === 'btn-lnk-' + blockId.replace('exp-', '');
+        button.classList.toggle('active', selected);
+        button.setAttribute('aria-pressed', String(selected));
+      });
+      document.getElementById(blockId)?.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
 
     // Projects Tab Filter controller
@@ -595,66 +569,16 @@
         tabPcb.classList.add('active');
       }
 
+      tabEmb.setAttribute('aria-pressed', String(category === 'embedded'));
+      tabPcb.setAttribute('aria-pressed', String(category === 'pcb'));
       const cards = document.querySelectorAll('.project-card');
       cards.forEach(card => {
         if (card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
+          card.style.display = '';
         } else {
           card.style.display = 'none';
         }
       });
-    }
-
-    // Card Carousels slider controller logic
-    const carouselStates = {
-      emb1: 0,
-      emb2: 0,
-      pcb1: 0
-    };
-
-    function shiftCarousel(carouselId, direction) {
-      const slidesContainer = document.getElementById(`slide-${carouselId}`);
-      const totalSlides = slidesContainer.querySelectorAll('img').length;
-
-      let activeIdx = carouselStates[carouselId] + direction;
-      if (activeIdx < 0) {
-        activeIdx = totalSlides - 1;
-      } else if (activeIdx >= totalSlides) {
-        activeIdx = 0;
-      }
-
-      setCarouselSlide(carouselId, activeIdx);
-    }
-
-    function setCarouselSlide(carouselId, slideIndex) {
-      carouselStates[carouselId] = slideIndex;
-      const slidesContainer = document.getElementById(`slide-${carouselId}`);
-      const offset = -slideIndex * 100;
-      slidesContainer.style.transform = `translateX(${offset}%)`;
-
-      const indicators = slidesContainer.parentElement.querySelectorAll('.project-indicators .indicator-dot');
-      indicators.forEach((dot, index) => {
-        if (index === slideIndex) {
-          dot.classList.add('active');
-        } else {
-          dot.classList.remove('active');
-        }
-      });
-    }
-
-    // Video Play Modal / Lightbox controls
-    function openVideo(videoUrl) {
-      const modal = document.getElementById('video-lightbox');
-      const iframe = document.getElementById('lightbox-iframe');
-      iframe.src = videoUrl;
-      modal.classList.add('active');
-    }
-
-    function closeVideo() {
-      const modal = document.getElementById('video-lightbox');
-      const iframe = document.getElementById('lightbox-iframe');
-      iframe.src = "";
-      modal.classList.remove('active');
     }
 
     // Interactive Console / Terminal Simulator shell commands
@@ -676,20 +600,20 @@
 
         const echoLine = document.createElement('div');
         echoLine.className = 'console-line';
-        echoLine.innerHTML = `<span class="console-prompt">&gt;</span> ${consoleInput.value}`;
+        echoLine.textContent = '> ' + consoleInput.value;
         consoleBody.insertBefore(echoLine, consoleInput.parentElement);
 
         if (inputVal === 'clear') {
           const lines = consoleBody.querySelectorAll('.console-line');
           lines.forEach(line => line.remove());
-        } else if (inputVal in commands) {
+        } else if (Object.hasOwn(commands, inputVal)) {
           const reply = commands[inputVal];
           responseContainer.innerHTML = reply.replace(/\n/g, '<br>');
           consoleBody.insertBefore(responseContainer, consoleInput.parentElement);
         } else if (inputVal === '') {
           // Do nothing on empty enter
         } else {
-          responseContainer.innerHTML = `<span style="color: #ef4444;">ERROR: Unknown command: "${inputVal}". Type 'help' for diagnostics.</span>`;
+          responseContainer.textContent = `Unknown command: "${inputVal}". Type 'help' for available commands.`;
           consoleBody.insertBefore(responseContainer, consoleInput.parentElement);
         }
 
