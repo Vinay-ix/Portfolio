@@ -8,7 +8,7 @@
     content="Vinay Sharma - Embedded Systems & Firmware Engineer. Graduate Engineer Trainee at JKW Innovatics, working on embedded firmware, IoT systems, FPGA design, and real-time communication protocols." />
   <title>Vinay Sharma | Embedded Systems &amp; Firmware</title>
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=c9b36c6594db" />
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -21,10 +21,10 @@
       <a href="#about" class="brand" aria-label="Vinay Sharma home"><span class="brand-mark">vs<span>.</span></span><span class="brand-name">Vinay Sharma</span></a>
       <div class="header-subtitle">EMBEDDED SYSTEMS / FIRMWARE</div>
       <ul class="nav-menu" id="nav-links">
-        <li data-page="about"><a href="#about" onclick="navigateTo('about')">About</a></li>
-        <li data-page="experience"><a href="#experience" onclick="navigateTo('experience')">Experience</a></li>
-        <li data-page="skills"><a href="#skills" onclick="navigateTo('skills')">Skills</a></li>
-        <li data-page="projects"><a href="#projects" onclick="navigateTo('projects')">Projects</a></li>
+        <li data-page="about"><a href="#about">About</a></li>
+        <li data-page="experience"><a href="#experience">Experience</a></li>
+        <li data-page="skills"><a href="#skills">Skills</a></li>
+        <li data-page="projects"><a href="#projects">Projects</a></li>
         <li><a href="resume.pdf" class="nav-resume-btn" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </header>
@@ -544,7 +544,7 @@
     }
 
     window.addEventListener('hashchange', checkHashRoute);
-    window.addEventListener('load', () => { checkHashRoute(); filterProjects('embedded'); });
+    window.addEventListener('DOMContentLoaded', () => { checkHashRoute(); filterProjects('embedded'); });
 
     // Experience view quick scroll anchor helper
     function jumpToCompany(blockId) {
